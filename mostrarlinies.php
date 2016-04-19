@@ -1,11 +1,9 @@
 <?php
 
-$sql = $_POST[""];
-
-$resultado = explode(' ', $sql );
+$archivo = $_POST[""];
 
 if(feof($this->fitxer)) {
-	return "false";
+	echo "El fitxer <nom_fitxer> està buit";
 }
 
 while(!feof($this->fitxer)) {
