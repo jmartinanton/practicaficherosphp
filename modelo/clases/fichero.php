@@ -1,4 +1,5 @@
 <?php
+require_once '../basex/Session.php';
 
 class Fichero {
 	
@@ -6,9 +7,8 @@ class Fichero {
 	private $ficheroAbierto;
 	
 	
-	
-	function _construct(){
-		
+	function _construct($nombre){
+		$this->fichero = $nombre;
 	}
 	
 	function abre(){
@@ -38,12 +38,14 @@ class Fichero {
 		
 	}
 	
-	function vaciar(){
-		
-	}
 	
-	function borrar(){
-		
-	}
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

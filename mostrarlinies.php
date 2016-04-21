@@ -1,6 +1,8 @@
 <?php
 
-$archivo = $_POST[""];
+$nombre = $_POST["nombre"];
+
+Fichero fichero = new Fichero($nombre)
 
 
 ?>
