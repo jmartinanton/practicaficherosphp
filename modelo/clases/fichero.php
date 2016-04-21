@@ -25,7 +25,7 @@ class Fichero {
 	
 	function leeLinea(){
 		if(feof($this->fichero)) {
-			return "El fichero esta vacio";
+			return "El fichero ".$this->fichero." esta vacio";
 		}
 		
 		while(!feof($this->fitxer)) {
