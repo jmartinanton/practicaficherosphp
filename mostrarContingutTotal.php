@@ -1,7 +1,12 @@
 <?php
 
-$archivo = $_POST[""];
+require_once './modelo/bases/fichero.php';
 
+$nombre = $_POST["nombre"];
+
+$fichero = new Fichero($nombre);
+
+$fichero.leeLinea();
 ?>
 
 <html>
