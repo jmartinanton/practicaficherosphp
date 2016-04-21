@@ -1,10 +1,12 @@
 <?php
 
+require_once './modelo/bases/fichero.php';
+
 $nombre = $_POST["nombre"];
 
-Fichero fichero = new Fichero($nombre)
+$fichero = new Fichero($nombre);
 
-
+$fichero.leeLinea();
 ?>
 
 <html>
