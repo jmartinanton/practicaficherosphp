@@ -29,14 +29,12 @@ class Fichero {
 		
 	}
 	
+	function vaciar(){
+		
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	function borrar(){
+		
+	}
+
 }
