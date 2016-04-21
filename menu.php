@@ -9,6 +9,7 @@
 </form>
 <form action="mostrarNouContingut.php" method="post">
 <input type="submit" value="añadir contenido al fichero"/>
+Texto a insertar:<input type="text" name="insert"><br>
 </form>
 <form action="neteja.php" method="post">
 <input type="submit" value="netejar"/>

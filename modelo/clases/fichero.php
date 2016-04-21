@@ -38,7 +38,7 @@ class Fichero {
 	}
 	
 	function anadirAlFinal(){
-		
+		file_put_contents($this->fitxer, $nouContingut, FILE_APPEND);
 	}
 	
 	function vaciar(){
