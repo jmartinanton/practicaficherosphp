@@ -1,5 +1,4 @@
 <?php
-require_once '../basex/Session.php';
 
 class Fichero {
 	
