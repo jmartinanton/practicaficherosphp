@@ -1,13 +1,14 @@
 <?php
-require_once '../basex/Session.php';
+
 class Fichero {
 	
 	private $fichero;
 	private $ficheroAbierto;
 	
 	
-	function _construct($nombre){
-		$this->fichero = $nombre;
+	
+	function _construct(){
+		
 	}
 	
 	function abre(){
@@ -29,7 +30,6 @@ class Fichero {
 		
 		while(!feof($this->fitxer)) {
 			$linies[] = '1 - ' + fgets($this->fitxerObert, 1024);
-	
 		}
 		return $linies;
 	}
@@ -38,14 +38,12 @@ class Fichero {
 		
 	}
 	
+	function vaciar(){
+		
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	function borrar(){
+		
+	}
+
 }
