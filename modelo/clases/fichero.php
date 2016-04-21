@@ -20,7 +20,10 @@ class Fichero {
 	}
 	
 	function leeEntero(){
-		
+		if(!feof($this->fitxer)) {
+			return file_get_contents($this->fitxer);
+		}
+		return "El fichero ".$this->fichero." esta vacio";
 	}
 	
 	function leeLinea(){
