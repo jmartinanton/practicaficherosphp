@@ -6,7 +6,12 @@ $nombre = $_POST["nombre"];
 
 $fichero = new Fichero($nombre);
 
-$fichero.leeLinea();
+$array = $fichero.leeEntero();
+
+echo "<pre>";
+	print_r($array);
+echo "<pre>";
+
 ?>
 
 <html>

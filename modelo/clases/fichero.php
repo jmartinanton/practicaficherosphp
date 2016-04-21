@@ -30,8 +30,13 @@ class Fichero {
 		
 		while(!feof($this->fitxer)) {
 			$linies[] = '1 - ' + fgets($this->fitxerObert, 1024);
+	
 		}
 		return $linies;
+	}
+	
+	function limpiar(){
+		
 	}
 	
 	function anadirAlFinal(){
