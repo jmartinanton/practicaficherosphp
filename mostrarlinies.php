@@ -2,10 +2,11 @@
 
 $archivo = $_POST[""];
 
-if(feof($this->fitxer)) {
-	echo "El fitxer <nom_fitxer> està buit";
-}
 
-while(!feof($this->fitxer)) {
-	$linies[] = fgets($this->fitxerObert, 1024);
-}
+?>
+
+<html>
+<form action="index.php">
+<input type="submit" value="Volver a la pantalla principal"/>
+</form>
+</html>
