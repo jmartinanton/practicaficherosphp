@@ -7,8 +7,8 @@ class Fichero {
 	
 	
 	
-	function _construct(){
-		
+	function _construct($nombre){
+		$this->fichero = $nombre;
 	}
 	
 	function abre(){
@@ -24,8 +24,8 @@ class Fichero {
 	}
 	
 	function leeLinea(){
-		if(feof($this->fitxer)) {
-			return "false";
+		if(feof($this->fichero)) {
+			return "El fichero esta vacio";
 		}
 		
 		while(!feof($this->fitxer)) {

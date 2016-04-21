@@ -1,11 +1,15 @@
 <?php
 
-$archivo = $_POST[""];
+require_once './modelo/bases/fichero.php';
 
-if(feof($this->fitxer)) {
-	echo "El fitxer <nom_fitxer> està buit";
-}
+$nombre = $_POST["nombre"];
 
-while(!feof($this->fitxer)) {
-	$linies[] = fgets($this->fitxerObert, 1024);
-}
+$fichero = new Fichero($nombre);
+
+$array = $fichero.leeLinea();
+
+echo "<pre>";
+	print_r($array);
+echo "<pre>";
+
+?>

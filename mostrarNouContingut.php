@@ -6,7 +6,7 @@ $nombre = $_POST["nombre"];
 
 $fichero = new Fichero($nombre);
 
-$fichero.leeLinea();
+
 ?>
 
 <html>
