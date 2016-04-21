@@ -35,10 +35,6 @@ class Fichero {
 		return $linies;
 	}
 	
-	function limpiar(){
-		
-	}
-	
 	function anadirAlFinal(){
 		
 	}
