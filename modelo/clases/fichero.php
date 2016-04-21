@@ -5,6 +5,8 @@ class Fichero {
 	private $fichero;
 	private $ficheroAbierto;
 	
+	
+	
 	function _construct(){
 		
 	}
@@ -22,7 +24,14 @@ class Fichero {
 	}
 	
 	function leeLinea(){
+		if(feof($this->fitxer)) {
+			return "false";
+		}
 		
+		while(!feof($this->fitxer)) {
+			$linies[] = '1 - ' + fgets($this->fitxerObert, 1024);
+		}
+		return $linies;
 	}
 	
 	function anadirAlFinal(){
